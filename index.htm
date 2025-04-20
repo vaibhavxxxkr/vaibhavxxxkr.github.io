@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroVibes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>✨ AstroVibes ✨</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Horoscope</a></li>
+                <li><a href="#">Zodiac Compatibility</a></li>
+                <li><a href="#">Birth Chart</a></li>
+                <li><button id="toggleDarkMode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Horoscope Section -->
+        <section class="horoscope">
+            <h2>Check Your Daily Horoscope</h2>
+            <select id="zodiacSelect">
+                <option value="">Select Your Zodiac Sign</option>
+            </select>
+            <button onclick="showHoroscope()">Get Horoscope</button>
+            <div id="result"></div>
+        </section>
+
+        <!-- Zodiac Compatibility -->
+        <section class="compatibility">
+            <h2>Zodiac Compatibility</h2>
+            <select id="zodiac1"></select>
+            <select id="zodiac2"></select>
+            <button onclick="checkCompatibility()">Check Compatibility</button>
+            <div id="compatibilityResult"></div>
+        </section>
+
+        <!-- Birth Chart Section -->
+        <section class="birth-chart">
+            <h2>Simple Birth Chart Details</h2>
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="date" id="dob">
+            <input type="time" id="tob">
+            <input type="text" id="place" placeholder="Place of Birth">
+            <button onclick="showBirthChart()">Generate Birth Info</button>
+            <div id="birthChartResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AstroVibes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

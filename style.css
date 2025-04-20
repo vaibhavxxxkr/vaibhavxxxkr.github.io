@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #fbe7f5, #e1f0ff);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #5a4b81;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+select, input, button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+#result, #compatibilityResult, #birthChartResult {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #7b1fa2;
+}
+
+footer {
+    background-color: #5a4b81;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode select,
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
